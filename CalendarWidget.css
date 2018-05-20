@@ -1,0 +1,107 @@
+.calendarwidget-date-picker-warpper
+    {
+    width:400px;
+    background-color:white;
+    font-family:Arial;
+    border:1px solid silver;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+    }
+.calendarwidget-date-picker-header
+    {
+    width:100%;
+    height:65px;
+    font-size:0;
+    position:relative;
+    }
+.calendarwidget-date-picker-header span,.calendarwidget-date-picker-header a
+    {
+    display:inline-block;
+    height:65px;
+    line-height:65px;
+    }
+.calendarwidget-date-picker-header .prev-date-btn,.next-date-btn
+    {
+    font-size:30px;
+    width:40px;
+    text-align:center;
+    color:#5e85c6;
+    padding-left:10px;
+    padding-right:10px;
+    text-decoration: none;
+    }
+.prev-date-btn-2,.next-date-btn-2 
+    {
+    fill:#5e85c6;
+    }
+.calendarwidget-date-picker-header .prev-date-btn
+    {
+    position:absolute;
+    left:0px;
+    top:0px;
+    }
+.calendarwidget-date-picker-header .next-date-btn
+    {
+    position:absolute;
+    right:0px;
+    top:0px;
+    }
+.calendarwidget-date-title
+    {
+    width:100%;
+    font-size:20px;
+    font-weight:bold;
+    color:black;
+    text-align:center;
+    }
+.calendarwidget-date-picker-table
+    {
+    border-spacing:0;
+    border-collapse:collapse;
+    width:100%;    
+    background-color:#f9f9fb;
+    }
+.calendarwidget-date-picker-body
+    {
+    width:100%;
+    }
+.calendarwidget-date-picker-body tr
+    {
+    width:100%;
+    height:56px;
+    }
+.calendarwidget-date-picker-body tr th
+    {
+    height:56px;
+    color:black;
+    line-height:40px;
+    text-align:center;
+    font-size:14px;
+    background-color:#E7E9ED;
+    text-transform:uppercase;
+    }
+.calendarwidget-date-picker-body tr td
+    {
+    width:46px;
+    height:40px;
+    color:black;
+    line-height:40px;
+    font-size:14px;
+    text-align:center;
+    background-color:white;
+    }
+.calendarwidget-date-picker-body tr .calendarwidget-gray
+    {
+    color:#f9f9fb;
+    background-color:#f9f9fb;
+    }
+.calendarwidget-date-picker-body tr .calendarwidget-normal
+    {
+    color:black;
+    }
+.calendarwidget-date-picker-body tr .calendarwidget-current
+    {
+    background:#5e85c6;
+    color:white;
+    }

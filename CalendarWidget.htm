@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<title>Calendar demo</title>
+	    <style>
+    	    .container
+        		{
+        		position:fixed;
+        		width:500px;
+        		left:0px;
+        		right:0px;
+        		top:0px;
+        		bottom:0px;
+        		margin:0 auto;
+				}
+    	</style>
+    	<link rel="stylesheet" href="CalendarWidget.css">
+    	<script src="CalendarWidget.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="calendar"></div>
+		</div>
+		<script>
+    		new CalendarWidget({dom:document.getElementById("calendar"),year:2018,month:5,day:19});
+		</script>
+	</body>
+</html>
