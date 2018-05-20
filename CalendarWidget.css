@@ -30,10 +30,12 @@
     padding-left:10px;
     padding-right:10px;
     text-decoration: none;
+    cursor:pointer;
     }
 .calendarwidget-prev-date-btn-2,.calendarwidget-next-date-btn-2 
     {
     fill:#5e85c6;
+    cursor:pointer;
     }
 .calendarwidget-date-picker-header .calendarwidget-prev-date-btn
     {
