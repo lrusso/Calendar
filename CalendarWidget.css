@@ -21,7 +21,7 @@
     height:65px;
     line-height:65px;
     }
-.calendarwidget-date-picker-header .prev-date-btn,.next-date-btn
+.calendarwidget-date-picker-header .calendarwidget-prev-date-btn,.calendarwidget-next-date-btn
     {
     font-size:30px;
     width:40px;
@@ -31,17 +31,17 @@
     padding-right:10px;
     text-decoration: none;
     }
-.prev-date-btn-2,.next-date-btn-2 
+.calendarwidget-prev-date-btn-2,.calendarwidget-next-date-btn-2 
     {
     fill:#5e85c6;
     }
-.calendarwidget-date-picker-header .prev-date-btn
+.calendarwidget-date-picker-header .calendarwidget-prev-date-btn
     {
     position:absolute;
     left:0px;
     top:0px;
     }
-.calendarwidget-date-picker-header .next-date-btn
+.calendarwidget-date-picker-header .calendarwidget-next-date-btn
     {
     position:absolute;
     right:0px;
