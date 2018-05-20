@@ -102,13 +102,13 @@
 
         html += "<div class='calendarwidget-date-picker-header'>";
 
-		html += "<a href='javascript:void(0);' class='calendarwidget-prev-date-btn'>";
+		html += "<a class='calendarwidget-prev-date-btn'>";
 		html += "<svg height='24' width='24' version='1.1' class='calendarwidget-prev-date-btn-2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path class='calendarwidget-prev-date-btn-2' d='M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z'></path></svg>";
 		html += '</a>';
 
         html += "<span class='calendarwidget-date-title'>" + this.enMonthsWords[this.monthData.month - 1] + " " + this.monthData.year + "</span>";
 
-		html += "<a href='javascript:void(0);' class='calendarwidget-next-date-btn'>";
+		html += "<a class='calendarwidget-next-date-btn'>";
 		html += "<svg height='24' width='24' version='1.1' class='calendarwidget-next-date-btn-2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path class='calendarwidget-next-date-btn-2' d='M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z'></path></svg>";
 		html += '</a>';
 
