@@ -22,7 +22,11 @@
 			<div id="calendar"></div>
 		</div>
 		<script>
-    		new CalendarWidget({dom:document.getElementById("calendar"),year:2018,month:5,day:19});
+			var currentDate = new Date();
+			var currentDay = currentDate.getDate();
+			var currentMonth = currentDate.getMonth() + 1;
+			var currentYear = currentDate.getFullYear();
+    		new CalendarWidget({dom:document.getElementById("calendar"),year:currentYear,month:currentMonth,day:currentDay});
 		</script>
 	</body>
 </html>
