@@ -5,9 +5,9 @@
 .calendarwidget_prev_date_btn_2,.calendarwidget_next_date_btn_2{fill:#3a76b1;cursor:pointer}
 .calendarwidget_date_picker_header .calendarwidget_prev_date_btn{position:absolute;left:0px;top:0px}
 .calendarwidget_date_picker_header .calendarwidget_next_date_btn{position:absolute;right:0px;top:0px}
-.calendarwidget_date_title{display:inline-block;width:399px;font-size:20px;font-weight:bold;color:black;text-align:center}
-.calendarwidget_date_picker_body{display:inline-block;width:399px}
-.calendarwidget_date_picker_table{display:inline-block;border-spacing:0;border-collapse:collapse;background-color:#f9f9fb}
+.calendarwidget_date_title{width:399px;font-size:20px;font-weight:bold;color:black;text-align:center}
+.calendarwidget_date_picker_body{width:399px}
+.calendarwidget_date_picker_table{border-spacing:0;border-collapse:collapse;background-color:#f9f9fb}
 .calendarwidget_date_picker_table tr{height:56px}
 .calendarwidget_date_picker_table tr th{height:56px;color:black;line-height:40px;text-align:center;font-size:14px;background-color:#E7E9ED;text-transform:uppercase}
 .calendarwidget_date_picker_table tr td{width:56px;height:40px;color:black;line-height:40px;font-size:14px;text-align:center;background-color:white}
