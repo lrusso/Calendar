@@ -1,6 +1,6 @@
 # JavaScript Calendar
 
-![alt screenshot](https://raw.githubusercontent.com/lrusso/JavaScriptCalendar/master/JavaScriptCalendar.png)
+![alt screenshot](https://raw.githubusercontent.com/lrusso/JavaScriptCalendar/master/CalendarWidget.png)
 
 ## Web
 
