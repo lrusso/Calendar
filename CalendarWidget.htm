@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<title>Calendar demo</title>
-	    <style>
-    	    .container
-        		{
-        		position:fixed;
-        		width:500px;
-        		left:0px;
-        		right:0px;
-        		top:0px;
-        		bottom:0px;
-        		margin:0 auto;
-				}
-    	</style>
-    	<link rel="stylesheet" href="CalendarWidget.css">
-    	<script src="CalendarWidget.js"></script>
+		<meta charset="UTF-8">
+		<title>Calendar demo</title>
+		<link rel="stylesheet" href="CalendarWidget.css">
+		<style>
+			.container{position:fixed;width:500px;left:0px;right:0px;top:0px;bottom:0px;margin:0 auto}
+		</style>
+		<script src="CalendarWidget.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -26,7 +18,7 @@
 			var currentDay = currentDate.getDate();
 			var currentMonth = currentDate.getMonth() + 1;
 			var currentYear = currentDate.getFullYear();
-    		new CalendarWidget({dom:document.getElementById("calendar"),year:currentYear,month:currentMonth,day:currentDay});
+			new CalendarWidget({dom:document.getElementById("calendar"),year:currentYear,month:currentMonth,day:currentDay});
 		</script>
 	</body>
 </html>
