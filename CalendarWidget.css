@@ -1,4 +1,4 @@
-.calendarwidget_date_picker_warpper{width:399px;background-color:white;font-family:Arial;border:1px solid silver;-webkit-user-select:none;-moz-user-select:none;user-select:none}
+.calendarwidget_date_picker_warpper{width:399px;height:403px;overflow:hidden;background-color:white;font-family:Arial;border:1px solid silver;-webkit-user-select:none;-moz-user-select:none;user-select:none}
 .calendarwidget_date_picker_header{display:inline-block;width:399px;height:65px;font-size:0;position:relative}
 .calendarwidget_date_picker_header span,.calendarwidget_date_picker_header a{display:inline-block;height:65px;line-height:65px}
 .calendarwidget_date_picker_header .calendarwidget_prev_date_btn,.calendarwidget_next_date_btn{font-size:30px;width:40px;text-align:center;color:#3a76b1;padding-left:10px;padding-right:10px;text-decoration: none;cursor:pointer}
