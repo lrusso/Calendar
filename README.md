@@ -1,5 +1,7 @@
 # JavaScript Calendar
 
+Simple and Tiny JavaScript Calendar.
+
 ![alt screenshot](https://raw.githubusercontent.com/lrusso/JavaScriptCalendar/master/CalendarWidget.png)
 
 ## Web
