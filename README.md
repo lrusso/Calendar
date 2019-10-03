@@ -1,5 +1,5 @@
 # JavaScript Calendar
 
-## Demo
+## Web
 
 https://lrusso.github.io/JavaScriptCalendar/CalendarWidget.htm
