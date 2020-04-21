@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calendar</title>
+		<link rel="stylesheet" href="Calendar.css">
+		<style>
+			html,body{padding:0;margin:0;min-height:100%;height:100%;text-align:center}
+			.outer{display:table;height:100%;width:100%;text-align:center}
+			.container{display:table-cell;vertical-align: middle}
+			.container2{display:inline-block}
+		</style>
+		<script src="Calendar.js"></script>
+	</head>
+	<body>
+		<div class="outer">
+			<div class="container">
+				<div class="container2">
+					<div id="calendar"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var currentDate = new Date();
+			var currentDay = currentDate.getDate();
+			var currentMonth = currentDate.getMonth() + 1;
+			var currentYear = currentDate.getFullYear();
+			new Calendar({dom:document.getElementById("calendar"),year:currentYear,month:currentMonth,day:currentDay});
+		</script>
+	</body>
+</html>
