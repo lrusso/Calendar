@@ -17,22 +17,36 @@ class Calendar
 
 		this.warpper.addEventListener("click", function (e)
 			{
-			var $target = e.target;
-			if ($target.classList.contains("calendar_prev_date_btn"))
+			try
 				{
-				thisCalendar.render("prev");
+				var $target = e.target;
+				if ($target.id==="calendar_prev_date_btn")
+					{
+					thisCalendar.render("prev");
+					}
+				else if ($target.id==="calendar_prev_date_btn_2")
+					{
+					thisCalendar.render("prev");
+					}
+				else if ($target.id==="calendar_prev_date_btn_3")
+					{
+					thisCalendar.render("prev");
+					}
+				else if ($target.id==="calendar_next_date_btn")
+					{
+					thisCalendar.render("next");
+					}
+				else if ($target.id==="calendar_next_date_btn_2")
+					{
+					thisCalendar.render("next");
+					}
+				else if ($target.id==="calendar_next_date_btn_3")
+					{
+					thisCalendar.render("next");
+					}
 				}
-			else if ($target.classList.contains("calendar_prev_date_btn_2"))
+				catch(err)
 				{
-				thisCalendar.render("prev");
-				}
-			else if ($target.classList.contains("calendar_next_date_btn"))
-				{
-				thisCalendar.render("next");
-				}
-			else if ($target.classList.contains("calendar_next_date_btn_2"))
-				{
-				thisCalendar.render("next");
 				}
 			}, false);
 		}
@@ -153,24 +167,33 @@ class Calendar
 		this.dayWords = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 		this.enMonthsWords = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+		var calendar_date_picker_warpper = "width:399px;background-color:white;font-family:Arial;border:thin solid silver;-webkit-user-select:none;-moz-user-select:none;user-select:none";
+		var calendar_date_picker_header = "display:inline-block;width:399px;height:64px;font-size:0;position:relative";
+		var calendar_prev_date_btn = "font-size:30px;width:40px;text-align:center;color:#3a76b1;padding-left:10px;padding-right:10px;text-decoration: none;cursor:pointer;display:inline-block;height:64px;line-height:64px;position:absolute;left:0px;top:0px";
+		var calendar_prev_date_btn_2 = "fill:#3a76b1;cursor:pointer";
+		var calendar_next_date_btn = "font-size:30px;width:40px;text-align:center;color:#3a76b1;padding-left:10px;padding-right:10px;text-decoration: none;cursor:pointer;display:inline-block;height:64px;line-height:64px;position:absolute;right:0px;top:0px";
+		var calendar_next_date_btn_2 = "fill:#3a76b1;cursor:pointer";
+		var calendar_date_title = "width:399px;font-size:20px;font-weight:bold;color:black;text-align:center;display:inline-block;height:64px;line-height:64px";
+		var calendar_date_picker_body = "width:399px";
+
 		var html = "";
-		html += "<div class='calendar_date_picker_warpper'>";
+		html += "<div style='" + calendar_date_picker_warpper + "'>";
 
-		html += "<div class='calendar_date_picker_header'>";
+		html += "<div style='" + calendar_date_picker_header + "'>";
 
-		html += "<a class='calendar_prev_date_btn'>";
-		html += "<svg height='24' width='24' version='1.1' class='calendar_prev_date_btn_2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path class='calendar_prev_date_btn_2' d='M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z'></path></svg>";
+		html += "<a style='" + calendar_prev_date_btn + "' id='calendar_prev_date_btn'>";
+		html += "<svg height='24' width='24' version='1.1' style='" + calendar_prev_date_btn_2 + "' id='calendar_prev_date_btn_2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path style='" + calendar_prev_date_btn_2 + "' id='calendar_prev_date_btn_3' d='M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z'></path></svg>";
 		html += '</a>';
 
-		html += "<span class='calendar_date_title'>" + this.enMonthsWords[this.monthData.month - 1] + " " + this.monthData.year + "</span>";
+		html += "<span style='" + calendar_date_title + "'>" + this.enMonthsWords[this.monthData.month - 1] + " " + this.monthData.year + "</span>";
 
-		html += "<a class='calendar_next_date_btn'>";
-		html += "<svg height='24' width='24' version='1.1' class='calendar_next_date_btn_2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path class='calendar_next_date_btn_2' d='M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z'></path></svg>";
+		html += "<a style='" + calendar_next_date_btn + "' id='calendar_next_date_btn'>";
+		html += "<svg height='24' width='24' version='1.1' style='" + calendar_next_date_btn_2 + "' id='calendar_next_date_btn_2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path style='" + calendar_next_date_btn_2 + "' id='calendar_next_date_btn_3' d='M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z'></path></svg>";
 		html += '</a>';
 
 		html += "</div>";
 
-		html += "<div class='calendar_date_picker_body'>";
+		html += "<div style='" + calendar_date_picker_body + "'>";
 		html += "<table class='calendar_date_picker_table'><thead><tr>";
 
 		for (var i = 0; i < this.dayWords.length; i++)

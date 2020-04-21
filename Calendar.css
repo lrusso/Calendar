@@ -1,12 +1,3 @@
-.calendar_date_picker_warpper{width:399px;background-color:white;font-family:Arial;border:thin solid silver;-webkit-user-select:none;-moz-user-select:none;user-select:none}
-.calendar_date_picker_header{display:inline-block;width:399px;height:64px;font-size:0;position:relative}
-.calendar_date_picker_header span,.calendar_date_picker_header a{display:inline-block;height:64px;line-height:64px}
-.calendar_date_picker_header .calendar_prev_date_btn,.calendar_next_date_btn{font-size:30px;width:40px;text-align:center;color:#3a76b1;padding-left:10px;padding-right:10px;text-decoration: none;cursor:pointer}
-.calendar_prev_date_btn_2,.calendar_next_date_btn_2{fill:#3a76b1;cursor:pointer}
-.calendar_date_picker_header .calendar_prev_date_btn{position:absolute;left:0px;top:0px}
-.calendar_date_picker_header .calendar_next_date_btn{position:absolute;right:0px;top:0px}
-.calendar_date_title{width:399px;font-size:20px;font-weight:bold;color:black;text-align:center}
-.calendar_date_picker_body{width:399px}
 .calendar_date_picker_table{border-spacing:0;border-collapse:collapse;background-color:#f9f9fb}
 .calendar_date_picker_table tr{height:56px}
 .calendar_date_picker_table tr th{height:56px;color:black;line-height:40px;text-align:center;font-size:14px;background-color:#E7E9ED;text-transform:uppercase}
