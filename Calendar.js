@@ -20,27 +20,15 @@ class Calendar
 			try
 				{
 				var $target = e.target;
-				if ($target.id==="calendar_prev_date_btn")
+				if ($target.id==="calendar_prev_date_btn" ||
+					$target.id==="calendar_prev_date_btn_2" ||
+					$target.id==="calendar_prev_date_btn_3")
 					{
 					thisCalendar.render("prev");
 					}
-				else if ($target.id==="calendar_prev_date_btn_2")
-					{
-					thisCalendar.render("prev");
-					}
-				else if ($target.id==="calendar_prev_date_btn_3")
-					{
-					thisCalendar.render("prev");
-					}
-				else if ($target.id==="calendar_next_date_btn")
-					{
-					thisCalendar.render("next");
-					}
-				else if ($target.id==="calendar_next_date_btn_2")
-					{
-					thisCalendar.render("next");
-					}
-				else if ($target.id==="calendar_next_date_btn_3")
+				else if ($target.id==="calendar_next_date_btn" ||
+						$target.id==="calendar_next_date_btn_2" ||
+						$target.id==="calendar_next_date_btn_3")
 					{
 					thisCalendar.render("next");
 					}
