@@ -41,6 +41,10 @@ class Calendar
 
 	getMonthData(year, month, day)
 		{
+		var calendar_gray = "width:56px;height:54px;color:black;line-height:40px;font-size:14px;text-align:center;color:#f9f9fb;background-color:#f9f9fb";
+		var calendar_normal = "width:56px;height:54px;color:black;line-height:40px;font-size:14px;text-align:center;color:black;background-color:white";
+		var calendar_current = "width:56px;height:54px;color:black;line-height:40px;font-size:14px;text-align:center;background:#3a76b1;color:white";
+
 		var year, month, day;
 		var ret = [];
 
@@ -79,7 +83,7 @@ class Calendar
 				{
 				thisMonth = month - 1;
 				showDate = "";
-				styleCls = "calendar_gray";
+				styleCls = calendar_gray;
 				}
 			else if (date > lastDate)
 				{
@@ -92,11 +96,11 @@ class Calendar
 				var today = new Date();
 				if (showDate === day && thisMonth === today.getMonth() + 1 && year == today.getFullYear())
 					{
-					styleCls = "calendar_current";
+					styleCls = calendar_current;
 					}
 					else
 					{
-					styleCls = "calendar_normal";
+					styleCls = calendar_normal;
 					}
 				}
 
@@ -164,6 +168,11 @@ class Calendar
 		var calendar_date_title = "width:399px;font-size:20px;font-weight:bold;color:black;text-align:center;display:inline-block;height:64px;line-height:64px";
 		var calendar_date_picker_body = "width:399px";
 
+		var calendar_date_picker_table = "border-spacing:0;border-collapse:collapse;background-color:#f9f9fb";
+		var calendar_date_picker_table_th = "height:56px;color:black;line-height:40px;text-align:center;font-size:14px;background-color:#E7E9ED;text-transform:uppercase";
+		var calendar_date_picker_table_td = "width:56px;height:40px;color:black;line-height:40px;font-size:14px;text-align:center;background-color:white";
+		var calendar_date_picker_table_td_gray = "width:56px;height:40px;color:black;line-height:40px;font-size:14px;text-align:center;color:#f9f9fb;background-color:#f9f9fb";
+
 		var html = "";
 		html += "<div style='" + calendar_date_picker_warpper + "'>";
 
@@ -182,11 +191,11 @@ class Calendar
 		html += "</div>";
 
 		html += "<div style='" + calendar_date_picker_body + "'>";
-		html += "<table class='calendar_date_picker_table'><thead><tr>";
+		html += "<table style='" + calendar_date_picker_table + "'><thead><tr>";
 
 		for (var i = 0; i < this.dayWords.length; i++)
 			{
-			html += "<th>" + this.dayWords[i] + "</th>";
+			html += "<th style='" + calendar_date_picker_table_th + "'>" + this.dayWords[i] + "</th>";
 			}
 
 		html += "</tr></thead><tbody>";
@@ -212,14 +221,14 @@ class Calendar
 				{
 				if (started==true)
 					{
-					html += "<td class='calendar_gray'></td>";
+					html += "<td style='" + calendar_date_picker_table_td_gray + "'></td>";
 					}
 				}
 				else
 				{
 				if (started==true)
 					{
-					html += "<td class='" + this.monthData.date[i].styleCls + "'>" + this.monthData.date[i].showDate + "</td>";
+					html += "<td style='" + this.monthData.date[i].styleCls + "'>" + this.monthData.date[i].showDate + "</td>";
 					}
 				}
 
