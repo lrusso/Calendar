@@ -1,7 +1,0 @@
-.calendar_date_picker_table{border-spacing:0;border-collapse:collapse;background-color:#f9f9fb}
-.calendar_date_picker_table tr{height:56px}
-.calendar_date_picker_table tr th{height:56px;color:black;line-height:40px;text-align:center;font-size:14px;background-color:#E7E9ED;text-transform:uppercase}
-.calendar_date_picker_table tr td{width:56px;height:40px;color:black;line-height:40px;font-size:14px;text-align:center;background-color:white}
-.calendar_date_picker_table tr .calendar_gray{color:#f9f9fb;background-color:#f9f9fb}
-.calendar_date_picker_table tr .calendar_normal{color:black}
-.calendar_date_picker_table tr .calendar_current{background:#3a76b1;color:white}
