@@ -41,9 +41,9 @@ class Calendar
 
 	getMonthData(year, month, day)
 		{
-		var calendar_gray = "width:56px;height:54px;color:black;line-height:40px;font-size:14px;text-align:center;color:#f9f9fb;background-color:#f9f9fb";
-		var calendar_normal = "width:56px;height:54px;color:black;line-height:40px;font-size:14px;text-align:center;color:black;background-color:white";
-		var calendar_current = "width:56px;height:54px;color:black;line-height:40px;font-size:14px;text-align:center;background:#3a76b1;color:white";
+		var calendar_gray = "width:56px;height:56px;color:black;line-height:40px;font-size:14px;text-align:center;color:#f9f9fb;background-color:#f9f9fb";
+		var calendar_normal = "width:56px;height:56px;color:black;line-height:40px;font-size:14px;text-align:center;color:black;background-color:white";
+		var calendar_current = "width:56px;height:56px;color:black;line-height:40px;font-size:14px;text-align:center;background:#3a76b1;color:white";
 
 		var year, month, day;
 		var ret = [];
