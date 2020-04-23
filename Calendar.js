@@ -170,8 +170,8 @@ class Calendar
 
 		var calendar_date_picker_table = "border-spacing:0;border-collapse:collapse;background-color:#f9f9fb";
 		var calendar_date_picker_table_th = "height:56px;color:black;line-height:40px;text-align:center;font-size:14px;background-color:#E7E9ED;text-transform:uppercase";
-		var calendar_date_picker_table_td = "width:56px;height:40px;color:black;line-height:40px;font-size:14px;text-align:center;background-color:white";
-		var calendar_date_picker_table_td_gray = "width:56px;height:40px;color:black;line-height:40px;font-size:14px;text-align:center;color:#f9f9fb;background-color:#f9f9fb";
+		var calendar_date_picker_table_td = "width:56px;height:56px;color:black;line-height:40px;font-size:14px;text-align:center;background-color:white";
+		var calendar_date_picker_table_td_gray = "width:56px;height:56px;color:black;line-height:40px;font-size:14px;text-align:center;color:#f9f9fb;background-color:#f9f9fb";
 
 		var html = "";
 		html += "<div style='" + calendar_date_picker_warpper + "'>";
