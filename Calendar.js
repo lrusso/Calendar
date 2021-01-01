@@ -156,8 +156,18 @@ class Calendar
 	buildUI(year, month, day)
 		{
 		this.monthData = this.getMonthData(year, month, day);
-		this.dayWords = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-		this.enMonthsWords = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+		var userLanguage = window.navigator.userLanguage || window.navigator.language;
+		if (userLanguage.substring(0,2)=="es")
+			{
+			this.dayWords = ["Lun","Mar","Mi&eacute;","Jue","Vie","S&aacute;b","Dom"];
+			this.enMonthsWords = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+			}
+			else
+			{
+			this.dayWords = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+			this.enMonthsWords = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			}
 
 		var calendar_date_picker_warpper = "width:399px;background-color:white;font-family:Arial;border:thin solid silver;-webkit-user-select:none;-moz-user-select:none;user-select:none";
 		var calendar_date_picker_header = "display:inline-block;width:399px;height:64px;font-size:0;position:relative";
